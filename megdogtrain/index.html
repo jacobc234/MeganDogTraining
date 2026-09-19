@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Megan Dog Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { min-height: 100%; }
+    body {
+      font-family: "Outfit", system-ui, sans-serif;
+      color: #2a241c;
+      background: #1c1814;
+    }
+
+    .page {
+      min-height: 100vh;
+      background:
+        linear-gradient(180deg, rgba(20,16,12,0.45) 0%, rgba(20,16,12,0.28) 40%, rgba(20,16,12,0.55) 100%),
+        url("images/hero.jpg") center / cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 36px 20px 28px;
+    }
+
+    .title {
+      text-align: center;
+      color: #fff;
+      max-width: 720px;
+      margin-bottom: 36px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.7), 0 6px 18px rgba(0,0,0,0.4);
+    }
+    .title p {
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      font-weight: 600;
+      opacity: 0.85;
+      margin-bottom: 10px;
+    }
+    .title h1 {
+      font-family: "Fraunces", serif;
+      font-weight: 500;
+      font-size: clamp(1.6rem, 4vw, 2.35rem);
+      line-height: 1.25;
+    }
+
+    .card {
+      width: min(840px, 100%);
+      background: rgba(180, 230, 230, 0.86);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.45);
+      border-radius: 24px;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.22);
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 100%;
+      min-height: 360px;
+      object-fit: cover;
+      display: block;
+    }
+    .info { padding: 32px 34px; display: flex; flex-direction: column; justify-content: center; }
+    .info h2 {
+      font-family: "Fraunces", serif;
+      font-size: 1.85rem;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+    .info .role { color: #5c5348; margin-bottom: 22px; }
+    .row { margin-bottom: 12px; }
+    .label {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #7a7268;
+      margin-bottom: 2px;
+    }
+    .row a, .row span {
+      color: #2a241c;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.05rem;
+    }
+    .row a:hover { text-decoration: underline; }
+
+    .strip {
+      width: min(820px, 100%);
+      margin-top: 22px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+    .strip img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      opacity: 0.92;
+    }
+
+    @media (max-width: 700px) {
+      .page { padding: 24px 14px 20px; }
+      .card { grid-template-columns: 1fr; }
+      .card img { min-height: 240px; max-height: 300px; }
+      .info { padding: 24px 22px 28px; }
+      .strip img { height: 110px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="title">
+      <p>Mesa, Arizona</p>
+      <h1>Dog training with an emphasis on confidence building and basic obedience</h1>
+    </header>
+
+    <section class="card">
+      <img src="images/about.jpg" alt="Trainer photo — replace this" />
+      <div class="info">
+        <h2>Megan Hodges</h2>
+        <p class="role">Dog trainer</p>
+
+        <div class="row">
+          <div class="label">Phone</div>
+          <a href="tel:+15551234567">(559) 789-2367</a>
+        </div>
+        <div class="row">
+          <div class="label">Email</div>
+          <a href="mailto:hello@example.com">meganahodges99@icloud.com</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip">
+      <img src="images/gallery-1.jpg" alt="" />
+      <img src="images/gallery-2.jpg" alt="" />
+      <img src="images/gallery-3.jpg" alt="" />
+      <img src="images/gallery-4.jpg" alt="" />
+    </div>
+  </div>
+</body>
+</html>

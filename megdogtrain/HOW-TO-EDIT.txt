@@ -1,0 +1,32 @@
+Willow & Wag — placeholder one-page site
+=======================================
+
+Open index.html in any browser to preview.
+
+What to change
+--------------
+1. Search the file for the word EDIT
+2. Replace names, city, phone, email, prices, bios, and reviews
+3. To swap photos, drop new pictures into the images folder
+   using these exact names:
+
+   images/hero.jpg
+   images/about.jpg
+   images/gallery-1.jpg
+   images/gallery-2.jpg
+   images/gallery-3.jpg
+   images/gallery-4.jpg
+   images/gallery-5.jpg
+   images/gallery-6.jpg
+
+The contact form opens the visitor's email app. Change TRAINER_EMAIL
+near the bottom of index.html so notes go to the right address.
+
+How to put it on the internet
+-----------------------------
+Easiest free options:
+- Netlify Drop: drag this whole folder onto https://app.netlify.com/drop
+- Cloudflare Pages
+- GitHub Pages
+
+Or send me the real text and photos and I will update the page for you.
